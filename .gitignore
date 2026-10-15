@@ -1,0 +1,11 @@
+node_modules/
+dist/
+Titan.Desktop/bin/
+Titan.Desktop/obj/
+artifacts/
+.verify/
+.verify2/
+.refine-check/
+.diagnostic/
+.packages/
+.nuget/

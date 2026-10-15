@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><title>Welcome to Titan</title><style>
+body{font-family:system-ui;margin:0;background:#f8f9fa;color:#212529}
+header{background:#7048e8;color:#fff;padding:36px;text-align:center}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;padding:24px;max-width:1000px;margin:auto}
+.card{background:#fff;border:1px solid #dee2e6;border-radius:12px;padding:20px}
+.flex{display:flex;gap:10px;justify-content:center;padding:16px}
+button{background:#7048e8;color:#fff;border:none;border-radius:8px;padding:10px 18px}
+</style></head><body>
+<header><h1>Titan Engine</h1><p>From-scratch browser engine</p></header>
+<div class="flex"><button id="b1">Click me</button></div>
+<div class="grid" id="grid">
+<div class="card"><h3>HTML</h3><p>Tokenizer + tree builder.</p></div>
+<div class="card"><h3>CSS</h3><p>Cascade, vars, media.</p></div>
+<div class="card"><h3>JS</h3><p>Interpreter + DOM.</p></div>
+</div>
+<script>
+let n = 0;
+document.querySelector("#b1").addEventListener("click", () => { n++; document.querySelector("header p").textContent = "Clicked " + n + " times!"; });
+</script></body></html>
